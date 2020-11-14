@@ -3,7 +3,7 @@ using Orleans;
 
 namespace Grains.Abstractions
 {
-    public interface IHello : IGrainWithIntegerKey
+    public interface IHelloGrain : IGrainWithGuidKey
     {
         Task<string> SayHello(string greeting);
     }

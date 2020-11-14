@@ -50,7 +50,7 @@ namespace Client
 
         private static async Task DoClientWork(IClusterClient client)
         {
-            var friend = client.GetGrain<IHello>(0);
+            var friend = client.GetGrain<IHelloGrain>(Guid.NewGuid());
             var response = await friend.SayHello("Good morning, HelloGrain!");
             Console.WriteLine($"\n\n{response}\n\n");
         }

@@ -5,7 +5,7 @@ using Orleans;
 
 namespace Grains
 {
-    public class HelloGrain : Grain, IHello
+    public class HelloGrain : Grain, IHelloGrain
     {
         private readonly ILogger _logger;
 
